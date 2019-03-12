@@ -17,7 +17,6 @@ Calculator::Calculator(QWidget *parent) :
 
     ui->Display->setText(QString::number(calcVal));
     std::array<QPushButton*, 10> numButtons;
-
     for(int i = 0; i < 10; i++ ){
         QString butName = "Button" + QString::number(i);
         numButtons[i] = Calculator::findChild<QPushButton *>(butName);
